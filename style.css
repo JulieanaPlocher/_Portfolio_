@@ -1,0 +1,177 @@
+:root {
+  --background: #081E28;
+}
+
+/* Navigation styles */
+header {
+  background: var(--background);
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0%;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a:hover {
+  color: #858f91;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 25ms ease-in-out 250ms;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+
+
+li {
+  display: block;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0;
+}
+
+
+
+h1 {
+  font-family: Apple Chancery, cursive;
+  font-size: 40px;
+  color: #858f91;
+}
+
+h2 {
+  font-size: 30px;
+  color: var(--background);
+  padding: 20px;
+  margin-top: 50px;
+  padding-top: 350px;
+}
+
+h3 {
+    font-size: 30px;
+    color: var(--background);
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.responsive {
+  max-width: 350px;
+  height: auto;
+    display: inline-block;
+  border-radius: 20px;
+}
+
+.intro {
+  width: 250px;
+  display: inline-block;
+  margin: 25px;
+  height: auto;
+  margin-top: -70px;
+}
+
+.work {
+    color: black;
+}
+
+
+@media screen and (max-width: 992px) {
+  .work {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    width: 100%;
+  }
+}
