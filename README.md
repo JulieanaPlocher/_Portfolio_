@@ -5,11 +5,11 @@
 This is my working portfolio
 
 ## Table-of-Contents
-* [URL (github repository)](#urlrepo)
+* [URL (Deployed Link)](#urlrepo)
 * [Screenshot](#screenshot)
 
 
-## URL (github repository)
+## URL (Deployed Link)
 https://julieanaplocher.github.io/_Portfolio_/
 
 ## Screenshot
